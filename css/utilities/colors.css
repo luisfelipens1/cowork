@@ -1,0 +1,37 @@
+:root{
+    --black: #1D1E1C;
+    --green: #D3F985;
+    --blue: #A6E8F6;
+    --pink: #FCBEDC;
+    --orange: #FBC899;
+    --gray: #F1F1F1;
+    --white: #FFF;
+}
+
+.black{
+    color: var(--black);
+}
+
+.green{
+    color: var(--green);
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.pink{
+    color: var(--pink);
+}
+
+.orange{
+    color: var(--orange);
+}
+
+.gray{
+    color: var(--gray);
+}
+
+.white{
+    color: var(--white);
+}

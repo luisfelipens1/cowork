@@ -1,0 +1,123 @@
+.statistics{
+    padding: 112px 64px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.statistics-content .subtitle{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.statistics-content h2{
+    margin-bottom: 32px;
+}
+
+.statistics-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.list-item .number{
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.list-item .number::after{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    z-index: -1;
+}
+
+.list-item .green::after{
+    background-color: #D3F985;
+}
+
+.list-item .blue::after{
+    background-color: #A6E8F6;
+}
+
+.list-item .pink::after{
+    background-color: #FCBEDC;
+}
+
+.list-item .orange::after{
+    background-color: #FBC899;
+}
+
+.statistics-img img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 48px;
+}
+
+@media(max-width: 1200px){
+    .statistics{
+        padding: 92px 52px;
+        gap: 70px;
+    }
+}
+
+@media(max-width: 992px){
+    .statistics{
+        padding: 70px 40px;
+        gap: 60px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .statistics-content{
+        text-align: center;
+    }
+    .list-item .number::after{
+        bottom: 5px;
+        left: 140px;
+    }
+    .statistics-img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .statistics{
+        padding: 70px 28px;
+        gap: 50px;
+    }
+    .statistics-img img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 576px){
+    .statistics{
+        padding: 60px 16px;
+        gap: 40px;
+    }
+    .statistics-list{
+        gap: 32px;
+    }
+    .statistics-list .number{
+        font-size: 40px;
+    }
+    .list-item .number::after{
+        width: 28px;
+        height: 28px;
+        bottom: 5px;
+        left: 35%;
+    }
+    .statistics-img img{
+        border-radius: 24px;
+        height: 300px;
+    }
+}

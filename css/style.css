@@ -1,0 +1,20 @@
+/*---------- Global Styles ----------*/
+@import './utilities/reset.css';
+@import './utilities/typography.css';
+@import './utilities/colors.css';
+
+/*---------- Components ----------*/
+@import './utilities/components.css';
+
+/*---------- Page Styles ----------*/
+@import './page/header.css';
+@import './page/main.css';
+@import './page/companies.css';
+@import './page/features.css';
+@import './page/virtual-tour.css';
+@import './page/statistics.css';
+@import './page/testimonials.css';
+@import './page/faqs.css';
+@import './page/cta.css';
+@import './page/blog.css';
+@import './page/footer.css';

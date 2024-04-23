@@ -1,0 +1,71 @@
+/* ---------- Container ----------*/
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* ---------- Buttons ----------*/
+.btn{
+    padding: 12px 24px;
+    border: 1px solid var(--black);
+    border-radius: 42px;
+    font: 600 14px/1.5 "Inter", sans-serif;
+    transition: 0.3s;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: var(--black);
+    color: var(--white);
+}
+.btn-primary:hover{
+    background-color: #292929;
+}
+.btn-secondary{
+    background-color: var(--white);
+    color: var(--black);
+}
+.btn-secondary:hover{
+    background-color: var(--gray);
+}
+
+/* ---------- Subtitle ----------*/
+.subtitle{
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Titles ----------*/
+.section-title{
+    display: flex;
+    gap: 6px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font: 700 48px/1.2 "Sora", sans-serif;
+}
+.section-title img{
+    width: 180px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 48px;
+}
+
+@media(max-width: 768px){
+    .section-title{
+        font-size: 36px;
+    }
+    .section-title img{
+        width: 120px;
+        height: 34px;
+    }
+}
+
+@media(max-width: 576px){
+    .section-title{
+        font-size: 24px;
+        gap: 6px 8px;
+    }
+}
